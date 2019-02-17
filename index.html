@@ -14,41 +14,38 @@
     <div class="container-fluid">
         <div class="row">
             <nav role="navigation" class="navbar navbar-inverse">
-                <div class="container">
-                    <div class="navbar-header">
-                        <!-- header name -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h1><a href="index.html"><b>САЙТ</b>САЙТ</a></h1>
-                                    <p>Сайт - лучший сайт на данную тематику!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- button menu -->
-                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                            <span class="sr-only">Navigation button</span>
-                            <span class="icon-bar"></span>  
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                <div class="container header">
+                    <!-- button menu -->
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Navigation button</span>
+                        <span class="icon-bar"></span>  
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- header name -->
+                    <div class="col-lg-3 col-md-6 col-sm-5 col-xs-6">
+                        <h1><a href="index.html"><b>САЙТ</b>САЙТ</a></h1>
                     </div>
                     <!-- form search -->
-                    <form action="" role="search" class="pull-left form_search hidden-xs">
-                        <div class="input-group">
-                            <input type="search" class="form-control input-lg" placeholder="Поиск">
-                            <div class="input-group-btn">
-                                <button class="btn btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    <div class="col-lg-4">
+                        <form action="" role="search" class="pull-left form_search hidden-md hidden-sm hidden-xs">
+                            <div class="input-group">
+                                <input type="search" class="form-control input-lg" placeholder="Поиск">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                     <!-- menu header -->
-                    <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="index.html">Главная</a></li>
-                            <li><a href="#">Подать объявление</a></li>
-                            <li><a href="come.html">Войти</a></li>
-                        </ul>
+                    <div class="col-lg-5 col-md-6 col-sm-7 col-xs-6 nav_menu">
+                        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="index.html">Главная</a></li>
+                                <li><a href="#">Подать объявление</a></li>
+                                <li><a href="come.html">Войти</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -58,7 +55,7 @@
     <div class="wrapper">
         <div class="container-fluid">
             <!-- form search -->
-            <form action="" role="search" class="visible-xs">
+            <form action="" role="search" class="visible-md visible-sm visible-xs">
                     <div class="input-group">
                         <input type="search" class="form-control input-lg" placeholder="Поиск">
                         <div class="input-group-btn">
