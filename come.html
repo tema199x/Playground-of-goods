@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вход</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav role="navigation" class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- header name -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h1><a href="index.html"><b>САЙТ</b>САЙТ</a></h1>
+                                    <p>Сайт - лучший сайт на данную тематику!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button menu -->
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Navigation button</span>
+                            <span class="icon-bar"></span>  
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- form search -->
+                    <form action="" role="search" class="pull-left form_search hidden-xs">
+                        <div class="input-group">
+                            <input type="search" class="form-control input-lg" placeholder="Поиск">
+                            <div class="input-group-btn">
+                                <button class="btn btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- menu header -->
+                    <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav nav-pills">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Подать объявление</a></li>
+                            <li class="active"><a href="come.html">Войти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="container come">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#panel1">Вход</a></li>
+                    <li><a data-toggle="tab" href="#panel2">Регистрация</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="panel1" class="tab-pane fade in active">
+                        <form action="" role="form">
+                            <label for="name">Адрес электронной почты</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="text" class="form-control" placeholder="введите адрес электронной почты" aria-describedby="sizing-addon2" id="name">
+                            </div>
+                            <label for="pas">Пароль</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="введите пароль" aria-describedby="sizing-addon2" id="pas">
+                            </div>
+                            <button type="submit" class="btn"><i class="glyphicon glyphicon-ok"></i>Войти</button>
+                        </form>
+                    </div>
+                    <div id="panel2" class="tab-pane fade">
+                        <form action="" role="form">
+                            <label for="namep">Имя пользователя</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" placeholder="введите имя пользователя" aria-describedby="sizing-addon2" id="namep">
+                            </div>
+                            <label for="surname">Фамилия пользователя</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" placeholder="введите фамилию пользователя" aria-describedby="sizing-addon2" id="surname">
+                            </div>
+                            <label for="mail">Адрес электронной почты</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="text" class="form-control" placeholder="введите адрес электронной почты" aria-describedby="sizing-addon2" id="mail">
+                            </div>
+                            <label for="pass">Пароль</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="введите пароль" aria-describedby="sizing-addon2" id="pass">
+                            </div>
+                            <label for="pasp">Пароль повторно</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" placeholder="введите пароль повторно" aria-describedby="sizing-addon2" id="pasp">
+                            </div>
+                            <button type="submit" class="btn"><i class="glyphicon glyphicon-ok"></i>Войти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <footer>
+        <div class="container">
+            <p class="text-center">
+                <a href="index.html">Главная</a>
+                <a href="index.html">Подать объявление</a>
+                <a href="come.html">Войти</a>
+                <a href="index.html">О нас</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
