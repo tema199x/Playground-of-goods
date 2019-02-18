@@ -234,11 +234,11 @@ label {
 
 .tab-content>.tab-pane>form>.btn {
     background-color: #fa5c65;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-top: 30px;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    width: 100px;
+    width: 188px;
     height: 50px;
 }
 
@@ -313,6 +313,10 @@ footer p a:hover {
 
     .nav_menu {
         width: 100%;
+    }
+    
+    footer {
+        height: 60px;
     }
 }
 
