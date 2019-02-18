@@ -44,6 +44,12 @@ label {
     color: #314a5b;
 }
 
+select {
+    border: none;
+    position: relative;
+    outline: none;
+}
+
 /* indent */
 .clear {
     clear: both;
@@ -57,6 +63,39 @@ label {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 0px;
+}
+
+.region_s {
+    width: 45%;
+}
+
+.header>.col-lg-2>select {
+    margin-top: 10px;
+}
+
+#region {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 3px;
+    border: none;
+    background-color: white;
+}
+
+.form_search_m {
+    width: 50%;
+}
+
+.sel {
+    border: 1px solid #ccc;
+    padding: 6px 0 4px 20px;
+    border-radius: 5px;
+    background-color: White;
+    color: #9aa0ab;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.sel>i {
+    color: #314a5b;
 }
 
 .header {
@@ -317,6 +356,13 @@ footer p a:hover {
     
     footer {
         height: 60px;
+    }
+}
+
+@media (max-width: 1199px)
+and    (min-width: 992px) {
+    .form_search_m {
+        width: 100%;
     }
 }
 
