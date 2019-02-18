@@ -258,7 +258,7 @@ select {
 }
 
 .col-lg-9>.container-fluid>.list-group {
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .tab-content>.tab-pane>form {
