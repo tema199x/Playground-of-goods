@@ -15,7 +15,7 @@ a {
 }
 
 button {
-    background-color: #fa5c65;
+    background-color: white;
 }
 
 i {
@@ -96,6 +96,7 @@ select {
 
 .sel>i {
     color: #314a5b;
+    font-size: 120%;
 }
 
 .header {
@@ -156,6 +157,19 @@ select {
     margin-top: 2px;
 }
 
+.glyphicon-search {
+    color: #314a5b;
+    font-size: 120%;
+}
+
+.btn {
+    border-top-color: #ccc;
+    border-right-color: #ccc;
+    border-bottom-color: #ccc;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
 /* wrapper style */
 .panel-info>.panel-heading {
     background-image: none;
@@ -208,14 +222,15 @@ select {
     float: right;
     background-color: #fa5c65;
     color: white;
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 72px -11px 0px 0px;
 }
 
 .list-group>li>a>.img_block>img {
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 120px;
+    width: 100%;
     height: 95px;
     transition: all 0.5s ease-out;
 }
@@ -225,6 +240,8 @@ select {
     height: 95px;
     overflow: hidden;
     border-radius: 5px;
+    float: left;
+    margin-right: 10px;
 }
 
 .list-group>li>a>.img_block>img:hover {
@@ -257,8 +274,9 @@ select {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
 
-.col-lg-9>.container-fluid>.list-group {
-    /* margin-left: 50px; */
+.wrapper>.container-fluid>.col-lg-9>.container-fluid>.list-group>li>a {
+    height: 150px;
+    overflow: hidden;
 }
 
 .tab-content>.tab-pane>form {
@@ -310,11 +328,21 @@ select {
 
 .tab-pane>form>.input-group>span>i {
     color: #314a5b;
+    font-size: 120%;
 }
 
 .tab-pane>form>.input-group>span {
     background-color: white;
     border-right-color: white;
+}
+
+.descript_text {
+    color: #314a5b;
+    font-size: 90%;
+}
+
+.list-group-item-text {
+    color: black;
 }
 
 /* footer style */
@@ -359,15 +387,26 @@ footer p a:hover {
     }
 
     .region_s {
-        width: 55%;
+        width: 40%;
+        margin-left: 5px;
     }
 
     .form_search_m {
         width: 40%;
+        margin-right: 5px;
     }
 
     .list-group>li>a>span {
-        margin-top: 12px;
+        margin-top: -30px;
+    }
+
+    .list-group>li>a>.img_block {
+        width: 85px;
+        height: 85px;
+    }
+
+    .list-group-item-text {
+        font-size: 80%;
     }
 
     h1 {
@@ -407,6 +446,15 @@ footer p a:hover {
 
     .come>.tab-content>.tab-pane>form>span>a {
         margin-left: 35%;
+    }
+
+    .form_search_m {
+        width: 40%;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
