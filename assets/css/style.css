@@ -190,6 +190,10 @@ select {
     border-color: #314a5b;
 }
 
+.come>.tab-content>.tab-pane>form>span>a {
+    margin-left: 70%;
+}
+
 .list-group-item>a:focus, .list-group-item>a:hover {
     color: #314a5b;
     text-decoration: none;
@@ -353,9 +357,56 @@ footer p a:hover {
     .nav_menu {
         width: 100%;
     }
+
+    .region_s {
+        width: 55%;
+    }
+
+    .form_search_m {
+        width: 40%;
+    }
+
+    .list-group>li>a>span {
+        margin-top: 12px;
+    }
+
+    h1 {
+        margin: 10px 0 5px 0;
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
     
     footer {
         height: 60px;
+    }
+
+    footer p a {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 630px) {
+    .wrapper>.container-fluid>.come {
+        width: 290px;
+    }
+
+    .tab-content>.tab-pane>form>.btn {
+        margin-left: 43px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    input[type="search"] {
+        font-size: 85%;
+    }
+
+    .come>.tab-content>.tab-pane>form>span>a {
+        margin-left: 35%;
     }
 }
 
@@ -363,6 +414,12 @@ footer p a:hover {
 and    (min-width: 992px) {
     .form_search_m {
         width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .sel {
+        width: 160px;
     }
 }
 
