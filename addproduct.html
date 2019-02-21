@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вход</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav role="navigation" class="navbar navbar-inverse">
+                <div class="container header">
+                    <!-- button menu -->
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Navigation button</span>
+                        <span class="icon-bar"></span>  
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- header name -->
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6">
+                        <h1><a href="index.html"><b>САЙТ</b>САЙТ</a></h1>
+                    </div>
+                    <!-- region button -->
+                    <div class="col-lg-2 col-md-3 hidden-sm hidden-xs">
+                        <div class="sel">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            <select name="region" id="region">
+                                <option value="stock">Город</option>
+                                <option value="bobruisk">Бобруйск</option>
+                                <option value="baranovichi">Барановичи</option>
+                                <option value="borisov">Борисов</option>
+                                <option value="baran">Барань</option>
+                                <option value="beloozersk">Белоозерск</option>
+                                <option value="bereza">Береза</option>
+                                <option value="berezino">Березино</option>
+                                <option value="beerezovka">Березовка</option>
+                                <option value="braslav">Браслав</option>
+                                <option value="brest">Брест</option>
+                                <option value="bihov">Быхов</option>
+                                <option value="buda">Буда-Кошелево</option>
+                                <option value="vasilevichi">Василевичи</option>
+                                <option value="verchnedvinsk">Верхнедвинск</option>
+                                <option value="vetka">Ветка</option>
+                                <option value="vileila">Вилейка</option>
+                                <option value="vitebsk">Витебск</option>
+                                <option value="volkovisk">Волковыск</option>
+                                <option value="vologin">Воложин</option>
+                                <option value="visokoe">Высокое</option>
+                                <option value="ganzevichi">Ганцевичи</option>
+                                <option value="glubokoe">Глубокое</option>
+                                <option value="gomel">Гомель</option>
+                                <option value="gorki">Горки</option>
+                                <option value="gorodok">Городок</option>
+                                <option value="grodno">Гродно</option>
+                                <option value="davidgorodok">Давид-Городок</option>
+                                <option value="derginsk">Дзержинск</option>
+                                <option value="disna">Дисна</option>
+                                <option value="dobruh">Добруш</option>
+                                <option value="dokstizi">Докшицы</option>
+                                <option value="drogichin">Дрогичин</option>
+                                <option value="dubrovno">Дубровно</option>
+                                <option value="datlovo">Дятлово</option>
+                                <option value="elsk">Ельск</option>
+                                <option value="godino">Жодино</option>
+                                <option value="gabinka">Жабинка</option>
+                                <option value="gitkovichi">Житковичи</option>
+                                <option value="globin">Жлобин</option>
+                                <option value="zaslavl">Заславль</option>
+                                <option value="ivanovo">Иваново</option>
+                                <option value="ivazevichi">Ивацевичи</option>
+                                <option value="ive">Ивье</option>
+                                <option value="kalinlovichi">Калинковичи</option>
+                                <option value="kamenez">Каменец</option>
+                                <option value="kirowsk">Кировск</option>
+                                <option value="klezk">Клецк</option>
+                                <option value="klimovichi">Климовичи</option>
+                                <option value="klichev">Кличев</option>
+                                <option value="kobrin">Кобрин</option>
+                                <option value="kopil">Копыль</option>
+                                <option value="kossovo">Коссово</option>
+                                <option value="kastukovichi">Костюковичи</option>
+                                <option value="krichev">Кричев</option>
+                                <option value="krupki">Крупки</option>
+                                <option value="lupel">Лепель</option>
+                                <option value="lida">Лида</option>
+                                <option value="logoisk">Логойск</option>
+                                <option value="luninets">Лунинец</option>
+                                <option value="luban">Любань</option>
+                                <option value="lahovichi">Ляховичи</option>
+                                <option value="mozir">Мозырь</option>
+                                <option value="malorita">Малорита</option>
+                                <option value="marinagorka">Марьина Горка</option>
+                                <option value="mikahevichi">Микашевичи</option>
+                                <option value="minsk">Минск</option>
+                                <option value="miori">Миоры</option>
+                                <option value="mogilev">Могилев</option>
+                                <option value="molodechno">Молодечно</option>
+                                <option value="mosti">Мосты</option>
+                                <option value="mstislavl">Мстиславль</option>
+                                <option value="madel">Мядель</option>
+                                <option value="novopolozk">Новополоцк</option>
+                                <option value="narovla">Наровля</option>
+                                <option value="nesvich">Несвиж</option>
+                                <option value="novogrudoc">Новогрудок</option>
+                                <option value="novolukoml">Новолукомль</option>
+                                <option value="orsha">Орша</option>
+                                <option value="osipovichi">Осиповичи</option>
+                                <option value="ohmani">Ошмяны</option>
+                                <option value="pinsk">Пинск</option>
+                                <option value="polozk">Полоцк</option>
+                                <option value="petrikov">Петриков</option>
+                                <option value="postavi">Поставы</option>
+                                <option value="prugani">Пружаны</option>
+                                <option value="rechiza">Речица</option>
+                                <option value="rogachev">Рогачев</option>
+                                <option value="svetlogorsk">Светлогорск</option>
+                                <option value="svisloch">Свислочь</option>
+                                <option value="seno">Сенно</option>
+                                <option value="skidel">Скидель</option>
+                                <option value="slavgorod">Славгород</option>
+                                <option value="slonim">Слоним</option>
+                                <option value="sluzk">Слуцк</option>
+                                <option value="smolevichi">Смолевичи</option>
+                                <option value="smorgin">Сморгонь</option>
+                                <option value="soligorsk">Солигорск</option>
+                                <option value="stariedorogi">Старые Дороги</option>
+                                <option value="stolbzi">Столбцы</option>
+                                <option value="stolin">Столин</option>
+                                <option value="tolochin">Толочин</option>
+                                <option value="turov">Туров</option>
+                                <option value="uzda">Узда</option>
+                                <option value="fanipol">Фаниполь</option>
+                                <option value="hvoiniki">Хойники</option>
+                                <option value="hausi">Чаусы</option>
+                                <option value="hahniki">Чашники</option>
+                                <option value="cherven">Червень</option>
+                                <option value="chernikov">Чериков</option>
+                                <option value="chechersk">Чечерск</option>
+                                <option value="hklov">Шклов</option>
+                                <option value="huchin">Щучин</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- form search -->
+                    <div class="col-lg-3">
+                        <form action="" role="search" class="pull-left form_search hidden-md hidden-sm hidden-xs">
+                            <div class="input-group">
+                                <input type="search" class="form-control input-lg" placeholder="Поиск">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- menu header -->
+                    <div class="col-lg-4 col-md-5 col-sm-7 col-xs-6 nav_menu">
+                        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="index.html">Главная</a></li>
+                                <li class="active"><a href="addproduct.html">Подать объявление</a></li>
+                                <li><a href="come.html">Войти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container-fluid addAd">
+            <!-- left block -->
+            <h2>Новое объявление</h2>
+            <div class="col-lg-6">
+                <div class="container col-lg-12">
+                    <form action="" role="form">
+                        <!-- name product -->
+                        <label for="nameProduct">Наименование товара</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control form_add" placeholder="введите наименование товара" id="nameProduct">
+                        </div>
+                        <!-- category product -->
+                        <label for="categoryProduct">Категория товара</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-th-list"></i></span>
+                            <select name="categoty" id="categoryProduct" class="form_add form-control">
+                                <option value="stock">Выбрать категорию товара</option>
+                                <option value="productchild">Товары для детей</option>
+                                <option value="cosmetic">Косметика</option>
+                                <option value="householdchemistry">Бытовая химия</option>
+                                <option value="technique">Техника</option>
+                                <option value="electronics">Электроника</option>
+                                <option value="productforhouse">Товары для дома</option>
+                                <option value="clothes">Одежда</option>
+                                <option value="shoes">Обувь</option>
+                                <option value="accesoris">Аксессуары</option>
+                                <option value="pet supplies">Зоотовары</option>
+                                <option value="productforauto">Товары для авто</option>
+                                <option value="sportsandrest">Спорт и отдых</option>
+                                <option value="productanddacha">Товары для дачи</option>
+                                <option value="gifts">Подарки</option>
+                                <option value="souvenirs">Сувениры</option>
+                                <option value="animals">Животные</option>
+                            </select>
+                        </div>
+                        <!-- description product -->
+                        <label for="descriptionProduct">Описание товара</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon"></i></span>
+                            <textarea class="form-control" id="descriptionProduct"></textarea>
+                        </div>
+                        <!-- type ad -->
+                        <label for="typeAd">Тип объявления</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-th-list"></i></span>
+                            <select name="categoty" id="typeAd" class="form_add form-control">
+                                <option value="stock">Выбрать тип объявления</option>
+                                <option value="pay">Продам</option>
+                                <option value="bay">Куплю</option>
+                                <option value="return">Отдам</option>
+                                <option value="take">Приму</option>
+                                <option value="exchange">Обменяю</option>
+                            </select>
+                        </div>
+                        <!-- location product -->
+                        <label for="locationProduct">Местонахождение товара</label>
+                        <div class="input-group select_cursor">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-map-marker"></i></span>
+                            <select name="categoty" id="locationProduct" class="form_add form-control">
+                                <option value="stock">Город</option>
+                                <option value="bobruisk">Бобруйск</option>
+                                <option value="baranovichi">Барановичи</option>
+                                <option value="borisov">Борисов</option>
+                                <option value="baran">Барань</option>
+                                <option value="beloozersk">Белоозерск</option>
+                                <option value="bereza">Береза</option>
+                                <option value="berezino">Березино</option>
+                                <option value="beerezovka">Березовка</option>
+                                <option value="braslav">Браслав</option>
+                                <option value="brest">Брест</option>
+                                <option value="bihov">Быхов</option>
+                                <option value="buda">Буда-Кошелево</option>
+                                <option value="vasilevichi">Василевичи</option>
+                                <option value="verchnedvinsk">Верхнедвинск</option>
+                                <option value="vetka">Ветка</option>
+                                <option value="vileila">Вилейка</option>
+                                <option value="vitebsk">Витебск</option>
+                                <option value="volkovisk">Волковыск</option>
+                                <option value="vologin">Воложин</option>
+                                <option value="visokoe">Высокое</option>
+                                <option value="ganzevichi">Ганцевичи</option>
+                                <option value="glubokoe">Глубокое</option>
+                                <option value="gomel">Гомель</option>
+                                <option value="gorki">Горки</option>
+                                <option value="gorodok">Городок</option>
+                                <option value="grodno">Гродно</option>
+                                <option value="davidgorodok">Давид-Городок</option>
+                                <option value="derginsk">Дзержинск</option>
+                                <option value="disna">Дисна</option>
+                                <option value="dobruh">Добруш</option>
+                                <option value="dokstizi">Докшицы</option>
+                                <option value="drogichin">Дрогичин</option>
+                                <option value="dubrovno">Дубровно</option>
+                                <option value="datlovo">Дятлово</option>
+                                <option value="elsk">Ельск</option>
+                                <option value="godino">Жодино</option>
+                                <option value="gabinka">Жабинка</option>
+                                <option value="gitkovichi">Житковичи</option>
+                                <option value="globin">Жлобин</option>
+                                <option value="zaslavl">Заславль</option>
+                                <option value="ivanovo">Иваново</option>
+                                <option value="ivazevichi">Ивацевичи</option>
+                                <option value="ive">Ивье</option>
+                                <option value="kalinlovichi">Калинковичи</option>
+                                <option value="kamenez">Каменец</option>
+                                <option value="kirowsk">Кировск</option>
+                                <option value="klezk">Клецк</option>
+                                <option value="klimovichi">Климовичи</option>
+                                <option value="klichev">Кличев</option>
+                                <option value="kobrin">Кобрин</option>
+                                <option value="kopil">Копыль</option>
+                                <option value="kossovo">Коссово</option>
+                                <option value="kastukovichi">Костюковичи</option>
+                                <option value="krichev">Кричев</option>
+                                <option value="krupki">Крупки</option>
+                                <option value="lupel">Лепель</option>
+                                <option value="lida">Лида</option>
+                                <option value="logoisk">Логойск</option>
+                                <option value="luninets">Лунинец</option>
+                                <option value="luban">Любань</option>
+                                <option value="lahovichi">Ляховичи</option>
+                                <option value="mozir">Мозырь</option>
+                                <option value="malorita">Малорита</option>
+                                <option value="marinagorka">Марьина Горка</option>
+                                <option value="mikahevichi">Микашевичи</option>
+                                <option value="minsk">Минск</option>
+                                <option value="miori">Миоры</option>
+                                <option value="mogilev">Могилев</option>
+                                <option value="molodechno">Молодечно</option>
+                                <option value="mosti">Мосты</option>
+                                <option value="mstislavl">Мстиславль</option>
+                                <option value="madel">Мядель</option>
+                                <option value="novopolozk">Новополоцк</option>
+                                <option value="narovla">Наровля</option>
+                                <option value="nesvich">Несвиж</option>
+                                <option value="novogrudoc">Новогрудок</option>
+                                <option value="novolukoml">Новолукомль</option>
+                                <option value="orsha">Орша</option>
+                                <option value="osipovichi">Осиповичи</option>
+                                <option value="ohmani">Ошмяны</option>
+                                <option value="pinsk">Пинск</option>
+                                <option value="polozk">Полоцк</option>
+                                <option value="petrikov">Петриков</option>
+                                <option value="postavi">Поставы</option>
+                                <option value="prugani">Пружаны</option>
+                                <option value="rechiza">Речица</option>
+                                <option value="rogachev">Рогачев</option>
+                                <option value="svetlogorsk">Светлогорск</option>
+                                <option value="svisloch">Свислочь</option>
+                                <option value="seno">Сенно</option>
+                                <option value="skidel">Скидель</option>
+                                <option value="slavgorod">Славгород</option>
+                                <option value="slonim">Слоним</option>
+                                <option value="sluzk">Слуцк</option>
+                                <option value="smolevichi">Смолевичи</option>
+                                <option value="smorgin">Сморгонь</option>
+                                <option value="soligorsk">Солигорск</option>
+                                <option value="stariedorogi">Старые Дороги</option>
+                                <option value="stolbzi">Столбцы</option>
+                                <option value="stolin">Столин</option>
+                                <option value="tolochin">Толочин</option>
+                                <option value="turov">Туров</option>
+                                <option value="uzda">Узда</option>
+                                <option value="fanipol">Фаниполь</option>
+                                <option value="hvoiniki">Хойники</option>
+                                <option value="hausi">Чаусы</option>
+                                <option value="hahniki">Чашники</option>
+                                <option value="cherven">Червень</option>
+                                <option value="chernikov">Чериков</option>
+                                <option value="chechersk">Чечерск</option>
+                                <option value="hklov">Шклов</option>
+                                <option value="huchin">Щучин</option>
+                            </select>
+                        </div>
+                        <!-- information seller -->
+                        <h3>Информация о продавце</h3>
+                        <!-- name seller -->
+                        <label for="nameSeller">Имя</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control form_add" placeholder="введите имя" id="nameSeller">
+                        </div>
+                        <!-- e-mail -->
+                        <label for="email">E-mail</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="text" class="form-control form_add" placeholder="введите email" id="email">
+                        </div>
+                        <!-- number phone -->
+                        <label for="numberPhone">Номер телефона</label>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input type="text" class="form-control form_add" placeholder="введите номер телефона" id="numberPhone">
+                        </div>
+                    </form>   
+                </div>
+            </div>
+            <!-- right block -->
+            <div class="col-lg-6">
+                <div class="container col-lg-12">
+                    <div class="row">
+                        <h3>Изображения</h3>
+                        <!-- photo 1 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/колеса.jpg" alt="Error photo one" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 2 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/кросы.jpg" alt="Error photo two" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 3 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/собака.jpg" alt="Error photo three" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 4 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/колеса.jpg" alt="Error photo four" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 5 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/колеса.jpg" alt="Error photo five" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 6 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/кросы.jpg" alt="Error photo six" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 7 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/собака.jpg" alt="Error photo seven" class="hidden">
+                            </a>
+                        </div>
+                        <!-- photo 8 -->
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <p class="addPhotoParag">Добавить</p>
+                                <img src="assets/img/колеса.jpg" alt="Error photo eight" class="hidden">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- button add ad -->
+                    <form action="#" role="form">
+                        <button type="submit" class="btn"><i class="glyphicon glyphicon-plus-sign"></i>Подать объявление</button>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+    <footer>
+        <div class="container">
+            <p class="text-center">
+                <a href="index.html">Главная</a>
+                <a href="addproduct.html">Подать объявление</a>
+                <a href="come.html">Войти</a>
+                <a href="index.html">О нас</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
