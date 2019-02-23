@@ -180,6 +180,7 @@ select {
 /* wrapper style */
 .panel-info>.panel-heading {
     background-image: none;
+    padding: 0;
 }
 
 .wrapper {
@@ -229,6 +230,7 @@ select {
 
 .badge {
     background-color: #314a5b;
+    font-size: 10px;
 }
 
 .list-group>li>a>span {
@@ -237,7 +239,8 @@ select {
     color: white;
     border-radius: 20px;
     padding: 4px;
-    margin: 72px -11px 0px 0px;
+    font-size: 80%;
+    margin: 15px -10px 0 0;
 }
 
 .list-group>li>a>.img_block>img {
@@ -373,6 +376,12 @@ select {
     margin-left: 30px;
 }
 
+.addPhotoParag>i {
+    color: #314a5b;
+    font-size: 150%;
+    margin: 4px 0 0 21px;
+}
+
 .form_add {
     height: 40px;
     width: 100%;
@@ -438,6 +447,25 @@ select {
     height: 150px;
     resize: none;
     border-left-color: white;
+}
+
+.wrapper>.container-fluid>.come>.tab-content>.fade>form>.row>.col-lg-6>.input-group>input {
+    height: 40px;
+    background-color: white;
+    border-left-color: white;
+}
+
+.wrapper>.container-fluid>.come>.tab-content>.fade>form>.row>.col-lg-6>.input-group {
+    margin-top: 3px;
+}
+
+.descript_price {
+    margin: 29px -9px 0 0 !important;
+    background-color: #314a5b !important;
+}
+
+.descript_buy {
+    margin: 29px 5px 0 0 !important;
 }
 
 /* footer style */
