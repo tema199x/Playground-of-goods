@@ -71,7 +71,15 @@ select {
     margin-top: 10px;
 }
 
-#region {
+#region_header {
+     cursor: pointer;
+     padding: 5px 0px 5px 0px;
+     margin-left: 3px;
+     border: none;
+     background-color: white;
+}
+
+#region_wrapper {
     cursor: pointer;
     padding: 5px 0px 5px 0px;
     margin-left: 3px;
