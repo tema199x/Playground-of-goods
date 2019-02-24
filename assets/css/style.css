@@ -93,7 +93,7 @@ select {
 
 .sel {
     border: 1px solid #ccc;
-    padding: 6px 0 3px 10px;
+    padding: 6px 0 3px 6px;
     border-radius: 7px;
     background-color: White;
     color: #9aa0ab;
